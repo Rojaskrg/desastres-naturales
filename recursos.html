@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos y Ayuda</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Desastres Naturales</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="tipos_desastres.html">Tipos de Desastres</a></li>
+                <li class="nav-item"><a class="nav-link" href="prevencion.html">Prevención y Seguridad</a></li>
+                <li class="nav-item active"><a class="nav-link" href="recursos_ayuda.html">Recursos y Ayuda</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Encabezado de la página -->
+    <header class="bg-light text-center py-5">
+        <h1>Recursos y Ayuda</h1>
+        <p>Encuentra información sobre organizaciones y recursos para víctimas de desastres naturales.</p>
+    </header>
+
+    <!-- Tabla de recursos -->
+    <div class="container my-5">
+        <h2>Organizaciones de Ayuda</h2>
+        <table class="table table-bordered table-resources">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Organización</th>
+                    <th>Sitio Web</th>
+                    <th>Teléfono</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cruz Roja</td>
+                    <td><a href="https://www.cruzroja.org" target="_blank">www.cruzroja.org</a></td>
+                    <td>+1 800-733-2767</td>
+                </tr>
+                <tr>
+                    <td>FEMA</td>
+                    <td><a href="https://www.fema.gov" target="_blank">www.fema.gov</a></td>
+                    <td>+1 800-621-3362</td>
+                </tr>
+                <tr>
+                    <td>UNICEF</td>
+                    <td><a href="https://www.unicef.org" target="_blank">www.unicef.org</a></td>
+                    <td>+1 800-367-5437</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Sección de recursos multimedia -->
+    <div class="container my-5">
+        <h2>Recursos Multimedia</h2>
+        <p>Consulta estos videos y guías para aprender más sobre prevención y preparación.</p>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=example1" target="_blank">Video: Preparación ante terremotos</a></li>
+            <li><a href="https://www.youtube.com/watch?v=example2" target="_blank">Video: Cómo actuar durante un huracán</a></li>
+            <li><a href="https://www.example.com/guia-preparacion" target="_blank">Guía de preparación para emergencias (PDF)</a></li>
+        </ul>
+    </div>
+
+    <!-- Formulario para donaciones -->
+    <div class="container my-5">
+        <h2>Ayuda a las Víctimas</h2>
+        <form class="form-contacto">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2024 Desastres Naturales. Todos los derechos reservados.</p>
+        <p>Síguenos en nuestras redes sociales: 
+            <a href="#" class="text-white">Facebook</a> | 
+            <a href="#" class="text-white">Twitter</a> | 
+            <a href="#" class="text-white">Instagram</a>
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

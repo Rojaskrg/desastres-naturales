@@ -1,0 +1,132 @@
+<!-- Archivo: prevencion.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevención y Seguridad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Desastres Naturales</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tipos.html">Tipos de Desastres</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="prevencion.html">Prevención y Seguridad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recursos.html">Recursos y Ayuda</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="bg-success text-white text-center py-4">
+        <h1>Consejos de Prevención y Seguridad</h1>
+    </header>
+
+    <!-- Sección de consejos -->
+    <div class="container mt-4">
+        <h2>Consejos Generales</h2>
+        <ul class="list-group mb-4">
+            <li class="list-group-item d-flex align-items-center">
+                <i class="fas fa-check-circle me-3 text-primary"></i> Mantén un kit de emergencia en casa con alimentos, agua y suministros médicos.
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+                <i class="fas fa-check-circle me-3 text-primary"></i> Planifica rutas de evacuación y puntos de encuentro para tu familia.
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+                <i class="fas fa-check-circle me-3 text-primary"></i> Escucha la radio o la televisión para obtener alertas y noticias de última hora.
+            </li>
+        </ul>
+
+        <h2>Consejos Específicos por Tipo de Desastre</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Terremotos
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Refúgiate debajo de una mesa resistente y protégete la cabeza.</li>
+                            <li>Asegúrate de que los objetos pesados estén fijados a las paredes.</li>
+                            <li>Evita estar cerca de ventanas y espejos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Huracanes
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Refuerza puertas y ventanas con paneles de madera o persianas especiales.</li>
+                            <li>Evacúa si las autoridades lo ordenan y dirige tu vehículo por rutas seguras.</li>
+                            <li>Mantén tus documentos importantes en una bolsa impermeable.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Tsunamis
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Dirígete a terrenos elevados lo antes posible.</li>
+                            <li>No regreses a las zonas costeras hasta que las autoridades confirmen que es seguro.</li>
+                            <li>Escucha las alertas de emergencia y sigue las instrucciones oficiales.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario de contacto -->
+    <div class="container mt-5">
+        <h2>¿Tienes preguntas? Contáctanos</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2024 Desastres Naturales | Contacto: info@desastres.com</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
