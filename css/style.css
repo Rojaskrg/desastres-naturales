@@ -4,13 +4,13 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #e6dfdf;
-    color: #333;
+    background-color: #0056b3;
+    color: #f49d9d;
 }
 
 /* Encabezado y barra de navegación */
 .navbar {
-    background-color: #0e1c2c;
+    background-color: #0b0c0d;
 }
 .navbar a {
     color: #fff;
