@@ -53,7 +53,7 @@
     
     <!-- Banner Principal -->
     <section class="hero-section">
-        <div class="bg-danger"
+        <div class="bg-danger">
             <h1 class="display-4">Prepárate hoy para los desastres de mañana</h1>
             <p class="lead">Información que salva vidas. Estar preparado puede marcar la diferencia.</p>
         </div>
@@ -76,7 +76,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Terremotos">
+                    <img src="./img/images.jpeg" class="card-img-top" alt="Terremotos">
                     <div class="card-body">
                         <h5 class="card-title">Terremotos</h5>
                         <p class="card-text">Información sobre cómo prevenir y actuar en caso de terremotos.</p>
@@ -85,7 +85,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Huracanes">
+                    <img src="./img/huracan.jpg" class="card-img-top" alt="Huracanes">
                     <div class="card-body">
                         <h5 class="card-title">Huracanes</h5>
                         <p class="card-text">Guías sobre cómo prepararse y responder ante huracanes.</p>
@@ -94,7 +94,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Inundaciones">
+                    <img src="./img/alerta-roja-upala-guatuso-san.jpeg" class="card-img-top" alt="Inundaciones">
                     <div class="card-body">
                         <h5 class="card-title">Inundaciones</h5>
                         <p class="card-text">Consejos sobre evacuación y precauciones frente a inundaciones.</p>
@@ -125,32 +125,92 @@
         <h2 class="section-title">Simulaciones y Juegos Educativos</h2>
         <p class="text-center">Aprende cómo actuar ante un desastre natural de manera interactiva.</p>
         <div class="text-center">
-            <a href="#" class="btn btn-success">Iniciar Simulación</a>
+            <a href="#" class="btn btn-danger">Iniciar Simulación</a>
         </div>
+        <div class="instructions" id="instructions" style="display: none;">
+            <h2>Instrucciones</h2>
+            <p>1. Mantén la calma y sigue las indicaciones.</p>
+            <p>2. Identifica las rutas de evacuación.</p>
+            <p>3. Reúnete en el punto de seguridad establecido.</p>
+        </div>
+    
+        <script>
+            function iniciarSimulacro() {
+                alert("El simulacro ha comenzado. Por favor, sigue las instrucciones.");
+                document.getElementById("instructions").style.display = "block";
+            }
+        </script>
     </section>
 
     <!-- Historias y Testimonios -->
     <section class="container py-5">
         <h2 class="section-title">Historias y Testimonios</h2>
         <p class="text-center">Escucha relatos reales de personas afectadas por desastres naturales.</p>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Historia 1">
-                    <div class="card-body">
-                        <p class="card-text">"Superé un huracán gracias a la preparación. Este es mi testimonio..."</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Historia 2">
-                    <div class="card-body">
-                        <p class="card-text">"Después del terremoto, entendí la importancia de estar listo para cualquier evento."</p>
-                    </div>
-                </div>
-            </div>
+      
+    </div>
+
+    <!-- Formulario para agregar nuevos testimonios -->
+    <div class="card p-4 mb-5 shadow-sm">
+      <h2 class="h4 mb-3">Comparte tu historia</h2>
+      <form action="#" method="post">
+        <div class="mb-3">
+          <textarea 
+            name="testimonial" 
+            class="form-control" 
+            rows="5" 
+            placeholder="Escribe aquí tu experiencia..." 
+            required>
+          </textarea>
         </div>
+        <div class="mb-3">
+          <input 
+            type="text" 
+            name="name" 
+            class="form-control" 
+            placeholder="Tu nombre (opcional)">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Enviar Testimonio</button>
+      </form>
+    </div>
+
+    <!-- Lista de historias y testimonios -->
+    <div class="testimonials">
+      <h2 class="h4 mb-4">Testimonios Recientes</h2>
+
+      <!-- Testimonio 1 -->
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Ana Gómez</h5>
+          <p class="card-text">
+            "Durante el huracán, nuestra casa quedó inundada. Perdimos casi todo, pero la solidaridad de la comunidad nos ayudó a levantarnos. Es un recuerdo difícil, pero también me enseñó el poder de la unión."
+          </p>
+          <small class="text-muted">Publicado hace 2 días</small>
+        </div>
+      </div>
+
+      <!-- Testimonio 2 -->
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Carlos Méndez</h5>
+          <p class="card-text">
+            "El terremoto destruyó gran parte de mi vecindario. Fue aterrador, pero estoy agradecido de haber sobrevivido y poder ayudar a mis vecinos a reconstruir."
+          </p>
+          <small class="text-muted">Publicado hace 1 semana</small>
+        </div>
+      </div>
+
+      <!-- Testimonio 3 -->
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Anónimo</h5>
+          <p class="card-text">
+            "Nunca olvidaré el incendio forestal que arrasó nuestra región. A pesar de las pérdidas, el apoyo de los bomberos y voluntarios nos dio esperanza para comenzar de nuevo."
+          </p>
+          <small class="text-muted">Publicado hace 3 semanas</small>
+        </div>
+      </div>
+    </div>
+  </div>
     </section>
 
     <!-- Involucrar a la Comunidad -->
@@ -173,7 +233,7 @@
     <section class="container py-5">
         <h2 class="section-title">Impacto Global de los Desastres Naturales</h2>
         <div class="text-center">
-            <img src="https://via.placeholder.com/700x400" class="img-fluid" alt="Infografía">
+            <img src="./img/30377.jpeg" class="img-fluid" alt="Infografía">
         </div>
     </section>
     
@@ -202,6 +262,7 @@
         background: url('./img/ilustracion-dinamica-equipo-rescatistas-accion_973275-199129.jpg') no-repeat center center fixed;
         background-size: cover;
         color: #ece8e8; /* Asegúrate de que el color del texto sea legible sobre el fondo */
+        
     }
     .new-bar{
     background-color: #dc3545
@@ -227,6 +288,14 @@
           transform: translateX(-100%);
         }
       }
+      .instructions {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
 
 </style>
