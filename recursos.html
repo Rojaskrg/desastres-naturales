@@ -105,5 +105,39 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            background: url('./img/ilustracion-dinamica-equipo-rescatistas-accion_973275-199129.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ece8e8; /* Asegúrate de que el color del texto sea legible sobre el fondo */
+        }
+        .new-bar{
+        background-color: #dc3545
+        color( rgb(238, 234, 234) rgb(236, 245, 236) rgb(241, 241, 245));
+        padding: 100px 0;
+        overflow: hidden;
+        position: relative;
+        }
+        .news-ticker{
+         white-space: pre-wraP;
+         overflow: scroll;
+         animation: scroll 20s linear infinite;
+        }
+        .news-ticker span{
+            display: inline-block;
+            margin-right: 50px;
+        }
+        @keyframes scroll {
+            0% {
+              transform: translateX(200%);
+            }
+            100% {
+              transform: translateX(-100%);
+            }
+          }
+    
+    
+    </style>
 </body>
 </html>
