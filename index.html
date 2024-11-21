@@ -71,40 +71,125 @@
     </section>
 
     <!-- Información Interactiva -->
-    <section class="container py-5">
-        <div class="bg-dark">
-        <h2 class="section-title">Información Interactiva</h2>
-        <p class="text-center">Explora información sobre distintos tipos de desastres naturales.</p>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./img/images.jpeg" class="card-img-top" alt="Terremotos">
+    <div id="disasterCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Terremotos -->
+            <div class="carousel-item active">
+                <div class="card mb-4">
+                    <img src="./img/images.jpeg" class="card-img-top" alt="Terremoto">
                     <div class="card-body">
-                        <h5 class="card-title">Terremotos</h5>
-                        <p class="card-text">Información sobre cómo prevenir y actuar en caso de terremotos.</p>
+                        <h2 class="card-title">Terremotos</h2>
+                        <p class="card-text">Los terremotos son movimientos sísmicos causados por el desplazamiento de placas tectónicas en la corteza terrestre, lo que puede provocar tsunamis, daños a infraestructuras y pérdidas humanas.</p>
+                        <a href="./tipos.html#terremotos" class="btn btn-primary">Más información</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
+    
+            <!-- Huracanes -->
+            <div class="carousel-item">
+                <div class="card mb-4">
                     <img src="./img/huracan.jpg" class="card-img-top" alt="Huracanes">
                     <div class="card-body">
-                        <h5 class="card-title">Huracanes</h5>
-                        <p class="card-text">Guías sobre cómo prepararse y responder ante huracanes.</p>
+                        <h2 class="card-title">Huracanes, ciclones y tifones</h2>
+                        <p class="card-text">Son tormentas tropicales intensas que se desarrollan sobre los océanos, caracterizadas por vientos fuertes y lluvias torrenciales. Pueden causar inundaciones y destrucción masiva.</p>
+                        <a href="./tipos.html#huracanes" class="btn btn-primary">Más información</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
+    
+            <!-- Inundaciones -->
+            <div class="carousel-item">
+                <div class="card mb-4">
                     <img src="./img/alerta-roja-upala-guatuso-san.jpeg" class="card-img-top" alt="Inundaciones">
                     <div class="card-body">
-                        <h5 class="card-title">Inundaciones</h5>
-                        <p class="card-text">Consejos sobre evacuación y precauciones frente a inundaciones.</p>
+                        <h2 class="card-title">Inundaciones</h2>
+                        <p class="card-text">Las inundaciones ocurren cuando el agua de ríos, lagos o mares desborda sus límites naturales debido a lluvias intensas, deshielos o rotura de presas, cubriendo áreas habitadas y causando grandes pérdidas materiales.</p>
+                        <a href="./tipos.html#inundaciones" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Sequías -->
+            <div class="carousel-item">
+                <div class="card mb-4">
+                    <img src="./img/346486267_1140x520.jpg" class="card-img-top" alt="Sequías">
+                    <div class="card-body">
+                        <h2 class="card-title">Sequías</h2>
+                        <p class="card-text">Las sequías son períodos prolongados de escasez de lluvias que afectan el abastecimiento de agua y la agricultura, provocando crisis alimentarias y daños económicos.</p>
+                        <a href="./tipos.html#sequias" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Incendios forestales -->
+            <div class="carousel-item">
+                <div class="card mb-4">
+                    <img src="./img/INCENDIO.png" class="card-img-top" alt="Incendios forestales">
+                    <div class="card-body">
+                        <h2 class="card-title">Incendios forestales</h2>
+                        <p class="card-text">Los incendios forestales son fuegos descontrolados que destruyen bosques y vegetación debido a causas naturales, como rayos, o actividades humanas. Tienen efectos devastadores en la biodiversidad y la infraestructura.</p>
+                        <a href="./tipos.html#forestal" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Volcanes -->
+            <div class="carousel-item">
+                <div class="card mb-4">
+                    <img src="./img/PORTADAS-WEB-volcan.png" class="card-img-top" alt="Volcanes">
+                    <div class="card-body">
+                        <h2 class="card-title">Erupciones Volcanicas</h2>
+                        <p class="card-text">Las erupciones volcánicas liberan magma, cenizas y gases de la Tierra, lo que puede destruir áreas cercanas y afectar el clima a gran escala. El flujo de lava y la caída de cenizas son peligros directos.</p>
+                        <a href="./tipos.html#erupciones" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tsunamis -->
+            <div class="carousel-item">
+                <div class="card mb-4">
+                    <img src="./img/japan_wave001.webp" class="card-img-top" alt="Tsunamis">
+                    <div class="card-body">
+                        <h2 class="card-title">Tsunamis</h2>
+                        <p class="card-text">Los tsunamis son olas gigantes generadas por terremotos submarinos o erupciones volcánicas que pueden arrasar con las costas, provocando grandes inundaciones y destrucción.</p>
+                        <a href="./tipos.html#tsunamis" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Deslizamientos de tierra -->
+            <div class="carousel-item">
+                <div class="card mb-4">
+                    <img src="./img/FOTO-OVSICORI-3.jpg" class="card-img-top" alt="Deslizamientos de tierra">
+                    <div class="card-body">
+                        <h2 class="card-title">Deslizamientos de tierra</h2>
+                        <p class="card-text">Los deslizamientos de tierra ocurren cuando grandes masas de tierra, rocas o escombros se desplazan colina abajo, usualmente como resultado de lluvias intensas, terremotos o actividad humana.</p>
+                        <a href="./tipos.html#deslizamientos" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tornados -->
+            <div class="carousel-item">
+                <div class="card mb-4">
+                    <img src="./img/descarga.jpeg" class="card-img-top" alt="Tornados">
+                    <div class="card-body">
+                        <h2 class="card-title">Tornados</h2>
+                        <p class="card-text">Los tornados son fenómenos meteorológicos con vientos rotatorios extremadamente fuertes que destruyen todo a su paso. Suelen ocurrir en zonas específicas y pueden causar daños masivos.</p>
+                        <a href="./tipos.html#tornados" class="btn btn-primary">Más información</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#disasterCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#disasterCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
     <!-- Guías y Recursos Claves -->
     <section class="container py-5">
@@ -203,6 +288,7 @@
         <p class="text-center">Participa en eventos locales y actividades de voluntariado.</p>
         <div class="row">
             <div class="col-md-6">
+                <div class="">
                 <h4>Simulacro de Desastres</h4>
                 <p>Calendario de simulacros de evacuación y preparación en tu localidad.</p>
             </div>
@@ -213,14 +299,7 @@
         </div>
     </section>
 
-    <!-- Datos Visuales y Estadísticas -->
-    <section class="container py-5">
-        <div class="bg-dark">
-        <h2 class="section-title">Impacto Global de los Desastres Naturales</h2>
-        <div class="text-center">
-            <img src="./img/30377.jpeg" class="img-fluid" alt="Infografía">
-        </div>
-    </section>
+
     
     <div class="container-fluid news-bar">
     <div class="center">

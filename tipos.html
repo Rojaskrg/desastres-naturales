@@ -40,116 +40,184 @@
         <h1 class="display-4">Tipos de Desastres Naturales</h1>
     </header>
 
-    <div class="disaster-section row">
-        <!-- Terremotos -->
-        <div class="col-md-6">
-            <div class="card mb-4">
-                <img src="./img/images.jpeg" class="card-img-top" alt="Terremoto">
-                <div class="card-body">
-                    <h2 class="card-title">Terremotos</h2>
-                    <p class="card-text">Los terremotos son movimientos sísmicos causados por el desplazamiento de placas tectónicas en la corteza terrestre, lo que puede provocar tsunamis, daños a infraestructuras y pérdidas humanas.</p>
-                    <button class="btn btn-primary">Leer más</button>
+     <!-- Contenido Principal -->
+    <main class="container my-5">
+        <div class="row gy-4">
+            <!-- Terremotos -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div id="terremotos">
+                    <img src="./img/images.jpeg" class="card-img-top" alt="Terremotos">
+                    <div class="card-body">
+                        <h5 class="card-title">Terremotos</h5>
+                        <p class="card-text">Los terremotos son movimientos sísmicos producidos por la liberación de energía acumulada en la corteza terrestre.</p>
+                        <h6>Niveles de Fuerza:</h6>
+                        <ul>
+                            <li><strong>Leve:</strong> Menos de 4.0 en la escala de Richter. Normalmente no causan daños.</li>
+                            <li><strong>Moderado:</strong> Entre 4.0 y 6.0. Puede causar daños en estructuras débiles.</li>
+                            <li><strong>Severo:</strong> Más de 6.0. Puede provocar destrucción significativa.</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Huracanes -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="./img/huracan.jpg" class="card-img-top" alt="Huracanes">
+                    <div class="card-body">
+                        <div id="huracanes">
+                        <h5 class="card-title">Huracanes</h5>
+                        <p class="card-text">Los huracanes son tormentas tropicales intensas que se forman sobre océanos cálidos.</p>
+                        <h6>Niveles de Fuerza:</h6>
+                        <ul>
+                            <li><strong>Categoría 1:</strong> Vientos de 119-153 km/h. Daños menores.</li>
+                            <li><strong>Categoría 3:</strong> Vientos de 178-208 km/h. Daños estructurales significativos.</li>
+                            <li><strong>Categoría 5:</strong> Vientos superiores a 252 km/h. Daños catastróficos.</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tsunamis -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="./img/japan_wave001.webp" class="card-img-top" alt="Tsunamis">
+                    <div class="card-body">
+                        <div id="tsunamis">
+                        <h5 class="card-title">Tsunamis</h5>
+                        <p class="card-text">Los tsunamis son grandes olas generadas por terremotos submarinos u otros eventos sísmicos.</p>
+                        <h6>Niveles de Fuerza:</h6>
+                        <ul>
+                            <li><strong>Olas pequeñas:</strong> Altura de hasta 1 metro. Daños menores.</li>
+                            <li><strong>Olas moderadas:</strong> Altura de 1-3 metros. Daños costeros significativos.</li>
+                            <li><strong>Olas grandes:</strong> Más de 3 metros. Daños catastróficos.</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Incendios Forestales -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="./img/INCENDIO.png" class="card-img-top" alt="Incendios Forestales">
+                    <div class="card-body">
+                        <div id="forestal">
+                        <h5 class="card-title">Incendios Forestales</h5>
+                        <p class="card-text">Los incendios forestales son fuegos descontrolados que afectan áreas boscosas y rurales.</p>
+                        <h6>Niveles de Fuerza:</h6>
+                        <ul>
+                            <li><strong>Pequeño:</strong> Menos de 10 hectáreas afectadas. Controlable.</li>
+                            <li><strong>Moderado:</strong> Entre 10 y 100 hectáreas. Requiere equipos especializados.</li>
+                            <li><strong>Grande:</strong> Más de 100 hectáreas. Daños masivos.</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sequías -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="./img/346486267_1140x520.jpg" class="card-img-top" alt="Sequías">
+                    <div class="card-body">
+                        <div id="sequias">
+                        <h5 class="card-title">Sequías</h5>
+                        <p class="card-text">Las sequías son periodos prolongados sin precipitaciones que afectan a la disponibilidad de agua.</p>
+                        <h6>Niveles de Fuerza:</h6>
+                        <ul>
+                            <li><strong>Leve:</strong> Impacto menor en cultivos.</li>
+                            <li><strong>Moderado:</strong> Afecta la producción agrícola.</li>
+                            <li><strong>Severo:</strong> Desabastecimiento de agua generalizado.</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inundaciones -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="./img/alerta-roja-upala-guatuso-san.jpeg" class="card-img-top" alt="Inundaciones">
+                    <div class="card-body">
+                        <div id="inundaciones">
+                        <h5 class="card-title">Inundaciones</h5>
+                        <p class="card-text">Las inundaciones son acumulaciones excesivas de agua en zonas habitadas debido a lluvias intensas.</p>
+                        <h6>Niveles de Fuerza:</h6>
+                        <ul>
+                            <li><strong>Leve:</strong> Acumulación en calles y zonas bajas.</li>
+                            <li><strong>Moderado:</strong> Inundación de viviendas y carreteras.</li>
+                            <li><strong>Severo:</strong> Destrucción masiva de infraestructura.</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tornados -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="./img/descarga.jpeg" class="card-img-top" alt="Tornados">
+                    <div class="card-body">
+                        <div id="tornados">
+                        <h5 class="card-title">Tornados</h5>
+                        <p class="card-text">Los tornados son columnas de aire en rotación violenta que conectan la superficie con nubes.</p>
+                        <h6>Niveles de Fuerza:</h6>
+                        <ul>
+                            <li><strong>F0:</strong> Vientos de hasta 117 km/h. Daños menores.</li>
+                            <li><strong>F2:</strong> Vientos de 180-252 km/h. Daños moderados.</li>
+                            <li><strong>F5:</strong> Vientos superiores a 322 km/h. Daños catastróficos.</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deslizamientos -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="./img/FOTO-OVSICORI-3.jpg" class="card-img-top" alt="Deslizamientos">
+                    <div class="card-body">
+                        <div id="deslizamientos">
+                        <h5 class="card-title">Deslizamientos</h5>
+                        <p class="card-text">Los deslizamientos de tierra ocurren por el movimiento de suelo y rocas en pendientes.</p>
+                        <h6>Niveles de Fuerza:</h6>
+                        <ul>
+                            <li><strong>Leve:</strong> Deslizamientos pequeños sin impacto significativo.</li>
+                            <li><strong>Moderado:</strong> Bloqueo de carreteras y daños menores.</li>
+                            <li><strong
+                    ><strong>Severo:</strong> Destrucción masiva de infraestructura y pérdida de vidas humanas.</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Más información</a>
                 </div>
             </div>
         </div>
 
-        <!-- Huracanes -->
+        <!-- Erupciones Volcánicas -->
         <div class="col-md-6">
-            <div class="card mb-4">
-                <img src="./img/huracan.jpg" class="card-img-top" alt="Huracanes">
+            <div class="card">
+                <div id="erupciones">
+                <img src="./img/PORTADAS-WEB-volcan.png" class="card-img-top" alt="Erupciones Volcánicas">
                 <div class="card-body">
-                    <h2 class="card-title">Huracanes, ciclones y tifones</h2>
-                    <p class="card-text">Son tormentas tropicales intensas que se desarrollan sobre los océanos, caracterizadas por vientos fuertes y lluvias torrenciales. Pueden causar inundaciones y destrucción masiva.</p>
-                    <button class="btn btn-primary">Leer más</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Inundaciones -->
-        <div class="col-md-6">
-            <div class="card mb-4">
-                <img src="./img/alerta-roja-upala-guatuso-san.jpeg" class="card-img-top" alt="Inundaciones">
-                <div class="card-body">
-                    <h2 class="card-title">Inundaciones</h2>
-                    <p class="card-text">Las inundaciones ocurren cuando el agua de ríos, lagos o mares desborda sus límites naturales debido a lluvias intensas, deshielos o rotura de presas, cubriendo áreas habitadas y causando grandes pérdidas materiales.</p>
-                    <button class="btn btn-primary">Leer más</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Sequías -->
-        <div class="col-md-6">
-            <div class="card mb-4">
-                <img src="./img/346486267_1140x520.jpg" class="card-img-top" alt="Sequías">
-                <div class="card-body">
-                    <h2 class="card-title">Sequías</h2>
-                    <p class="card-text">Las sequías son períodos prolongados de escasez de lluvias que afectan el abastecimiento de agua y la agricultura, provocando crisis alimentarias y daños económicos.</p>
-                    <button class="btn btn-primary">Leer más</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Incendios forestales -->
-        <div class="col-md-6">
-            <div class="card mb-4">
-                <img src="./img/INCENDIO.png" class="card-img-top" alt="Incendios forestales">
-                <div class="card-body">
-                    <h2 class="card-title">Incendios forestales</h2>
-                    <p class="card-text">Los incendios forestales son fuegos descontrolados que destruyen bosques y vegetación debido a causas naturales, como rayos, o actividades humanas. Tienen efectos devastadores en la biodiversidad y la infraestructura.</p>
-                    <button class="btn btn-primary">Leer más</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Volcanes -->
-        <div class="col-md-6">
-            <div class="card mb-4">
-                <img src="./img/PORTADAS-WEB-volcan.png" class="card-img-top" alt="Volcanes">
-                <div class="card-body">
-                    <h2 class="card-title">Erupciones Volcanicas</h2>
-                    <p class="card-text">Las erupciones volcánicas liberan magma, cenizas y gases de la Tierra, lo que puede destruir áreas cercanas y afectar el clima a gran escala. El flujo de lava y la caída de cenizas son peligros directos.</p>
-                    <button class="btn btn-primary">Leer más</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tsunamis -->
-        <div class="col-md-6">
-            <div class="card mb-4">
-                <img src="./img/japan_wave001.webp" class="card-img-top" alt="Tsunamis">
-                <div class="card-body">
-                    <h2 class="card-title">Tsunamis</h2>
-                    <p class="card-text">Los tsunamis son olas gigantes generadas por terremotos submarinos o erupciones volcánicas que pueden arrasar con las costas, provocando grandes inundaciones y destrucción.</p>
-                    <button class="btn btn-primary">Leer más</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Deslizamientos de tierra -->
-        <div class="col-md-6">
-            <div class="card mb-4">
-                <img src="./img/FOTO-OVSICORI-3.jpg" class="card-img-top" alt="Deslizamientos de tierra">
-                <div class="card-body">
-                    <h2 class="card-title">Deslizamientos de tierra</h2>
-                    <p class="card-text">Los deslizamientos de tierra ocurren cuando grandes masas de tierra, rocas o escombros se desplazan colina abajo, usualmente como resultado de lluvias intensas, terremotos o actividad humana.</p>
-                    <button class="btn btn-primary">Leer más</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tornados -->
-        <div class="col-md-6">
-            <div class="card mb-4">
-                <img src="./img/descarga.jpeg" class="card-img-top" alt="Tornados">
-                <div class="card-body">
-                    <h2 class="card-title">Tornados</h2>
-                    <p class="card-text">Los tornados son fenómenos meteorológicos con vientos rotatorios extremadamente fuertes que destruyen todo a su paso. Suelen ocurrir en zonas específicas y pueden causar daños masivos.</p>
-                    <button class="btn btn-primary">Leer más</button>
+                    <h5 class="card-title">Erupciones Volcánicas</h5>
+                    <p class="card-text">Las erupciones volcánicas son expulsiones de lava, gases y cenizas desde el interior de un volcán.</p>
+                    <h6>Niveles de Fuerza:</h6>
+                    <ul>
+                        <li><strong>Leve:</strong> Emisiones de cenizas y gases con impacto local.</li>
+                        <li><strong>Moderado:</strong> Flujos de lava que afectan áreas cercanas.</li>
+                        <li><strong>Severo:</strong> Erupciones explosivas con daños masivos y desplazamientos de población.</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Más información</a>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
+
+
 
 <div class="container-fluid news-bar">
     <div class="center">
