@@ -1,4 +1,4 @@
-<!-- Archivo: tipos.html -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -40,34 +40,57 @@
         <h1 class="display-4">Tipos de Desastres Naturales</h1>
     </header>
 
-     <!-- Contenido Principal -->
-    <main class="container my-5">
-        <div class="row gy-4">
-            <!-- Terremotos -->
-            <div class="col-md-6">
-                <div class="card">
-                    <div id="terremotos">
-                    <img src="./img/images.jpeg" class="card-img-top" alt="Terremotos">
-                    <div class="card-body">
-                        <h5 class="card-title">Terremotos</h5>
-                        <p class="card-text">Los terremotos son movimientos sísmicos producidos por la liberación de energía acumulada en la corteza terrestre.</p>
-                        <h6>Niveles de Fuerza:</h6>
+   <!-- Contenido Principal -->
+   <main class="container my-5">
+    <div class="row gy-4">
+<!-- Terremotos -->
+<div class="col-md-6">
+    <div class="card">
+        <img src="./img/images.jpeg" class="card-img-top" alt="Terremotos">
+        <div class="accordion" id="terremotoAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="terremotoHeading">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#terremotoContent" aria-expanded="true" aria-controls="terremotoContent">
+                        Más información
+                    </button>
+                </h2>
+                <div id="terremotoContent" class="accordion-collapse collapse" aria-labelledby="terremotoHeading" data-bs-parent="#terremotoAccordion">
+                    <div class="accordion-body">
+                        <p>Los terremotos son movimientos bruscos de la tierra causados por la liberación de energía en la corteza terrestre.</p>
+                        <h6>Escala de Magnitud:</h6>
                         <ul>
-                            <li><strong>Leve:</strong> Menos de 4.0 en la escala de Richter. Normalmente no causan daños.</li>
-                            <li><strong>Moderado:</strong> Entre 4.0 y 6.0. Puede causar daños en estructuras débiles.</li>
-                            <li><strong>Severo:</strong> Más de 6.0. Puede provocar destrucción significativa.</li>
+                            <li><strong>Leve:</strong> Magnitud menor a 3.5, no se sienten.</li>
+                            <li><strong>Moderado:</strong> Magnitud entre 4.0 y 5.9. Daños menores.</li>
+                            <li><strong>Fuerte:</strong> Magnitud de 6.0 a 7.9. Daños importantes.</li>
+                            <li><strong>Muy fuerte:</strong> Magnitud superior a 8.0. Destrucción masiva.</li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Más información</a>
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" 
+                                    title="YouTube video" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                        </div>
+                        <a href="#" class="btn btn-primary">información sobre prevencion</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
 
-            <!-- Huracanes -->
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="./img/huracan.jpg" class="card-img-top" alt="Huracanes">
-                    <div class="card-body">
-                        <div id="huracanes">
+       <!-- Huracanes -->
+<div class="col-md-6">
+    <div class="card">
+        <img src="./img/huracan.jpg" class="card-img-top" alt="Huracanes">
+        <div class="accordion" id="accordionHuracanes">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingHuracanes">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHuracanes" aria-expanded="true" aria-controls="collapseHuracanes">
+                        Más información
+                    </button>
+                </h2>
+                <div id="collapseHuracanes" class="accordion-collapse collapse" aria-labelledby="headingHuracanes" data-bs-parent="#accordionHuracanes">
+                    <div class="accordion-body">
                         <h5 class="card-title">Huracanes</h5>
                         <p class="card-text">Los huracanes son tormentas tropicales intensas que se forman sobre océanos cálidos.</p>
                         <h6>Niveles de Fuerza:</h6>
@@ -76,17 +99,35 @@
                             <li><strong>Categoría 3:</strong> Vientos de 178-208 km/h. Daños estructurales significativos.</li>
                             <li><strong>Categoría 5:</strong> Vientos superiores a 252 km/h. Daños catastróficos.</li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Más información</a>
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" 
+                                    title="YouTube video" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                        </div>
+                        <a href="#" class="btn btn-primary">información sobre prevencion</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
 
-            <!-- Tsunamis -->
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="./img/japan_wave001.webp" class="card-img-top" alt="Tsunamis">
-                    <div class="card-body">
-                        <div id="tsunamis">
+
+
+<!-- Tsunamis -->
+<div class="col-md-6">
+    <div class="card">
+        <img src="./img/japan_wave001.webp" class="card-img-top" alt="Tsunamis">
+        <div class="accordion" id="accordionTsunamis">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTsunamis">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTsunamis" aria-expanded="true" aria-controls="collapseTsunamis">
+                        Más información
+                    </button>
+                </h2>
+                <div id="collapseTsunamis" class="accordion-collapse collapse" aria-labelledby="headingTsunamis" data-bs-parent="#accordionTsunamis">
+                    <div class="accordion-body">
                         <h5 class="card-title">Tsunamis</h5>
                         <p class="card-text">Los tsunamis son grandes olas generadas por terremotos submarinos u otros eventos sísmicos.</p>
                         <h6>Niveles de Fuerza:</h6>
@@ -95,129 +136,227 @@
                             <li><strong>Olas moderadas:</strong> Altura de 1-3 metros. Daños costeros significativos.</li>
                             <li><strong>Olas grandes:</strong> Más de 3 metros. Daños catastróficos.</li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Más información</a>
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" 
+                                    title="YouTube video" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                        </div>
+                        <a href="#" class="btn btn-primary">información sobre prevencion</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
 
-            <!-- Incendios Forestales -->
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="./img/INCENDIO.png" class="card-img-top" alt="Incendios Forestales">
-                    <div class="card-body">
-                        <div id="forestal">
-                        <h5 class="card-title">Incendios Forestales</h5>
-                        <p class="card-text">Los incendios forestales son fuegos descontrolados que afectan áreas boscosas y rurales.</p>
+
+
+<!-- Incendios Forestales -->
+<div class="col-md-6">
+    <div class="card">
+        <img src="./img/INCENDIO.png" class="card-img-top" alt="Incendios Forestales">
+        <div class="accordion" id="incendiosAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="incendiosHeading">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#incendiosContent" aria-expanded="true" aria-controls="incendiosContent">
+                        Más información
+                    </button>
+                </h2>
+                <div id="incendiosContent" class="accordion-collapse collapse" aria-labelledby="incendiosHeading" data-bs-parent="#incendiosAccordion">
+                    <div class="accordion-body">
+                        <p>Los incendios forestales son fuegos descontrolados que afectan áreas boscosas y rurales.</p>
                         <h6>Niveles de Fuerza:</h6>
                         <ul>
                             <li><strong>Pequeño:</strong> Menos de 10 hectáreas afectadas. Controlable.</li>
                             <li><strong>Moderado:</strong> Entre 10 y 100 hectáreas. Requiere equipos especializados.</li>
                             <li><strong>Grande:</strong> Más de 100 hectáreas. Daños masivos.</li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Más información</a>
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" 
+                                    title="YouTube video" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                        </div>
+                        <a href="#" class="btn btn-primary">información sobre prevencion</a>
                     </div>
-                </div>
-            </div>
-
-            <!-- Sequías -->
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="./img/346486267_1140x520.jpg" class="card-img-top" alt="Sequías">
-                    <div class="card-body">
-                        <div id="sequias">
-                        <h5 class="card-title">Sequías</h5>
-                        <p class="card-text">Las sequías son periodos prolongados sin precipitaciones que afectan a la disponibilidad de agua.</p>
-                        <h6>Niveles de Fuerza:</h6>
-                        <ul>
-                            <li><strong>Leve:</strong> Impacto menor en cultivos.</li>
-                            <li><strong>Moderado:</strong> Afecta la producción agrícola.</li>
-                            <li><strong>Severo:</strong> Desabastecimiento de agua generalizado.</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary">Más información</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Inundaciones -->
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="./img/alerta-roja-upala-guatuso-san.jpeg" class="card-img-top" alt="Inundaciones">
-                    <div class="card-body">
-                        <div id="inundaciones">
-                        <h5 class="card-title">Inundaciones</h5>
-                        <p class="card-text">Las inundaciones son acumulaciones excesivas de agua en zonas habitadas debido a lluvias intensas.</p>
-                        <h6>Niveles de Fuerza:</h6>
-                        <ul>
-                            <li><strong>Leve:</strong> Acumulación en calles y zonas bajas.</li>
-                            <li><strong>Moderado:</strong> Inundación de viviendas y carreteras.</li>
-                            <li><strong>Severo:</strong> Destrucción masiva de infraestructura.</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary">Más información</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tornados -->
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="./img/descarga.jpeg" class="card-img-top" alt="Tornados">
-                    <div class="card-body">
-                        <div id="tornados">
-                        <h5 class="card-title">Tornados</h5>
-                        <p class="card-text">Los tornados son columnas de aire en rotación violenta que conectan la superficie con nubes.</p>
-                        <h6>Niveles de Fuerza:</h6>
-                        <ul>
-                            <li><strong>F0:</strong> Vientos de hasta 117 km/h. Daños menores.</li>
-                            <li><strong>F2:</strong> Vientos de 180-252 km/h. Daños moderados.</li>
-                            <li><strong>F5:</strong> Vientos superiores a 322 km/h. Daños catastróficos.</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary">Más información</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Deslizamientos -->
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="./img/FOTO-OVSICORI-3.jpg" class="card-img-top" alt="Deslizamientos">
-                    <div class="card-body">
-                        <div id="deslizamientos">
-                        <h5 class="card-title">Deslizamientos</h5>
-                        <p class="card-text">Los deslizamientos de tierra ocurren por el movimiento de suelo y rocas en pendientes.</p>
-                        <h6>Niveles de Fuerza:</h6>
-                        <ul>
-                            <li><strong>Leve:</strong> Deslizamientos pequeños sin impacto significativo.</li>
-                            <li><strong>Moderado:</strong> Bloqueo de carreteras y daños menores.</li>
-                            <li><strong
-                    ><strong>Severo:</strong> Destrucción masiva de infraestructura y pérdida de vidas humanas.</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary">Más información</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Erupciones Volcánicas -->
-        <div class="col-md-6">
-            <div class="card">
-                <div id="erupciones">
-                <img src="./img/PORTADAS-WEB-volcan.png" class="card-img-top" alt="Erupciones Volcánicas">
-                <div class="card-body">
-                    <h5 class="card-title">Erupciones Volcánicas</h5>
-                    <p class="card-text">Las erupciones volcánicas son expulsiones de lava, gases y cenizas desde el interior de un volcán.</p>
-                    <h6>Niveles de Fuerza:</h6>
-                    <ul>
-                        <li><strong>Leve:</strong> Emisiones de cenizas y gases con impacto local.</li>
-                        <li><strong>Moderado:</strong> Flujos de lava que afectan áreas cercanas.</li>
-                        <li><strong>Severo:</strong> Erupciones explosivas con daños masivos y desplazamientos de población.</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary">Más información</a>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
 
+<!-- Sequías -->
+<div class="col-md-6">
+    <div class="card">
+        <img src="./img/346486267_1140x520.jpg" class="card-img-top" alt="Sequías">
+        <div class="accordion" id="sequiasAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="sequiasHeading">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sequiasContent" aria-expanded="true" aria-controls="sequiasContent">
+                        Más información
+                    </button>
+                </h2>
+                <div id="sequiasContent" class="accordion-collapse collapse" aria-labelledby="sequiasHeading" data-bs-parent="#sequiasAccordion">
+                    <div class="accordion-body">
+                        <p>Las sequías son períodos prolongados de escasez de agua debido a la falta de lluvias.</p>
+                        <h6>Niveles de Severidad:</h6>
+                        <ul>
+                            <li><strong>Moderada:</strong> Poco impacto en los recursos hídricos.</li>
+                            <li><strong>Severa:</strong> Impacta la agricultura y el suministro de agua potable.</li>
+                            <li><strong>Extrema:</strong> Grandes áreas afectadas, con escasez crítica de agua.</li>
+                        </ul>
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" 
+                                    title="YouTube video" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                        </div>
+                        <a href="#" class="btn btn-primary">información sobre prevencion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Inundaciones -->
+<div class="col-md-6">
+    <div class="card">
+        <img src="./img/alerta-roja-upala-guatuso-san.jpeg" class="card-img-top" alt="Inundaciones">
+        <div class="accordion" id="inundacionAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="inundacionHeading">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#inundacionContent" aria-expanded="true" aria-controls="inundacionContent">
+                        Más información
+                    </button>
+                </h2>
+                <div id="inundacionContent" class="accordion-collapse collapse" aria-labelledby="inundacionHeading" data-bs-parent="#inundacionAccordion">
+                    <div class="accordion-body">
+                        <p>Las inundaciones ocurren cuando grandes cantidades de agua cubren áreas normalmente secas, a menudo como resultado de lluvias intensas o desbordamientos de ríos.</p>
+                        <h6>Niveles de Severidad:</h6>
+                        <ul>
+                            <li><strong>Levele:</strong> Inundaciones menores, sin daños graves.</li>
+                            <li><strong>Moderada:</strong> Áreas inundadas, pero los daños son manejables.</li>
+                            <li><strong>Severa:</strong> Inundación extensiva, con pérdidas significativas.</li>
+                        </ul>
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" 
+                                    title="YouTube video" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                        </div>
+                        <a href="#" class="btn btn-primary">información sobre prevencion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Tornados -->
+<div class="col-md-6">
+    <div class="card">
+        <h1>Tornados</h1>
+        <img src="./img/descarga.jpeg" class="card-img-top" alt="Tornados">
+        <div class="accordion" id="tornadoAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="tornadoHeading">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tornadoContent" aria-expanded="true" aria-controls="tornadoContent">
+                        Más información
+                    </button>
+                </h2>
+                <div id="tornadoContent" class="accordion-collapse collapse" aria-labelledby="tornadoHeading" data-bs-parent="#tornadoAccordion">
+                    <div class="accordion-body">
+                        <p>Los tornados son columnas de aire en rotación con vientos extremadamente fuertes que tocan la superficie terrestre.</p>
+                        <h6>Escala Fujita (EF):</h6>
+                        <ul>
+                            <li><strong>EF0:</strong> Vientos de 105-137 km/h. Daños menores.</li>
+                            <li><strong>EF3:</strong> Vientos de 218-266 km/h. Daños severos a estructuras.</li>
+                            <li><strong>EF5:</strong> Vientos superiores a 322 km/h. Destrucción total.</li>
+                        </ul>
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" 
+                                    title="YouTube video" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                        </div>
+                        <a href="#" class="btn btn-primary">información sobre prevencion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Deslizamientos de Tierra -->
+<div class="col-md-6">
+    <div class="card">
+        <img src="./img/FOTO-OVSICORI-3.jpg" class="card-img-top" alt="Deslizamientos de Tierra">
+        <div class="accordion" id="deslizamientoAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="deslizamientoHeading">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#deslizamientoContent" aria-expanded="true" aria-controls="deslizamientoContent">
+                        Más información
+                    </button>
+                </h2>
+                <div id="deslizamientoContent" class="accordion-collapse collapse" aria-labelledby="deslizamientoHeading" data-bs-parent="#deslizamientoAccordion">
+                    <div class="accordion-body">
+                        <p>Los deslizamientos de tierra son movimientos de roca, tierra o escombros ladera abajo debido a la gravedad y factores como lluvias intensas o terremotos.</p>
+                        <h6>Niveles de Riesgo:</h6>
+                        <ul>
+                            <li><strong>Leve:</strong> Deslizamientos pequeños sin impacto significativo.</li>
+                            <li><strong>Moderado:</strong> Bloqueo de carreteras y daños menores a estructuras.</li>
+                            <li><strong>Severo:</strong> Daños catastróficos a propiedades y vidas humanas.</li>
+                        </ul>
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" 
+                                    title="YouTube video" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                        </div>
+                        <a href="#" class="btn btn-primary">información sobre prevencion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Erupciones Volcánicas -->
+<div class="col-md-6">
+    <div class="card">
+        <img src="./img/PORTADAS-WEB-volcan.png" class="card-img-top" alt="Erupciones Volcánicas">
+        <div class="accordion" id="volcanAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="volcanHeading">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#volcanContent" aria-expanded="true" aria-controls="volcanContent">
+                        Más información
+                    </button>
+                </h2>
+                <div id="volcanContent" class="accordion-collapse collapse" aria-labelledby="volcanHeading" data-bs-parent="#volcanAccordion">
+                    <div class="accordion-body">
+                        <p>Las erupciones volcánicas son eventos naturales donde los volcanes expulsan lava, gases y cenizas desde el interior de la Tierra.</p>
+                        <h6>Niveles de Actividad:</h6>
+                        <ul>
+                            <li><strong>Leve:</strong> Expulsión de cenizas y gases con afectación local.</li>
+                            <li><strong>Moderado:</strong> Flujos de lava que afectan zonas cercanas.</li>
+                            <li><strong>Severo:</strong> Erupciones explosivas con impactos masivos en infraestructura y población.</li>
+                        </ul>
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" 
+                                    title="YouTube video" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                        </div>
+                        <a href="#" class="btn btn-primary">información sobre prevencion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="container-fluid news-bar">
     <div class="center">
