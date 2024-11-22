@@ -122,25 +122,37 @@
 </body>
 </html>
 
-    <!-- Formulario para donaciones -->
-    <div class="container my-5">
-        <h2>Ayuda a las Víctimas</h2>
-        <form class="form-contacto">
-            <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
-            </div>
-            <div class="form-group">
-                <label for="email">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
-            </div>
-            <div class="form-group">
-                <label for="mensaje">Mensaje</label>
-                <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+<!-- Formulario de Donación -->
+<h2 class="mt-5 mb-4">Formulario para Donar o Ayudar</h2>
+<form action="#" method="post">
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
     </div>
+    <div class="mb-3">
+        <label for="donacion" class="form-label">Monto a Donar (₡/USD)</label>
+        <input type="number" class="form-control" id="donacion" name="donacion" required>
+    </div>
+    <div class="mb-3">
+        <label for="metodo" class="form-label">Método de Pago</label>
+        <select class="form-select" id="metodo" name="metodo" required>
+            <option value="transferencia">Transferencia Bancaria</option>
+            <option value="paypal">PayPal</option>
+            <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="voluntariado" class="form-label">Área de Voluntariado (opcional)</label>
+        <select class="form-select" id="voluntariado" name="voluntariado">
+            <option value="">Seleccionar</option>
+            <option value="rescate">Rescate</option>
+            <option value="alimentos">Donación de Alimentos</option>
+            <option value="psicologico">Apoyo Psicológico</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-success">Enviar</button>
+</form>
+</div>
 
     <!-- Pie de página -->
     <footer class="bg-dark text-white text-center py-3">
