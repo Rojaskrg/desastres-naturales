@@ -84,6 +84,12 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+.small-btn {
+    font-size: 12px; /* Tamaño de texto más pequeño */
+    padding: 5px 10px; /* Reducir el padding */
+    margin: 0 5px; /* Espacio horizontal entre botones */
+    display: inline-block; /* Asegura que estén alineados en línea */
+}
 
 /* Estilo de la tabla de recursos */
 .table-resources {
@@ -96,6 +102,15 @@ align-items: center;
     border: 1px solid #ddd;
     padding: 8px;
 }
+
+
+      
+
+        .section-title {
+            text-align: center;
+            margin-top: 40px;
+        }
+
 .table-resources th {
     background-color: #007bff;
     color: white;
